@@ -7,7 +7,8 @@ module.exports = (sequelize, type) => {
       },
       name : type.STRING,
       effect: type.STRING,
-      difficulty: type.STRING
+      difficulty: type.STRING,
+      age: type.INTEGER
   }, {
     tableName: "survival",
     timestamps: false
