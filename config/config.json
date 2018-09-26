@@ -5,7 +5,10 @@
       "database": "choices",
       "host": "localhost",
       "dialect": "sqlite",
-      "storage": "./data/choices.db"
+      "storage": "./data/choices.db",
+      "define": {
+          "charset": "utf8"
+      }
   },
   "test": {
       "username": "",
