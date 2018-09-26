@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const helmet = require("helmet");
 const cors = require("cors");
 const eventRoutes = require("./routes/events");
-
+const creatorsRoutes = require("./routes/creators");
 
 dotenv.load();
 app.set("view engine", "ejs");
@@ -14,10 +14,8 @@ app.use(cors());
 app.use(helmet())
 // app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
-app.get("/", (req, res) => {
-  res.render("index");
-});
 
+app.use("/", creatorsRoutes);
 app.use('/api/', eventRoutes);
 
 app.use(function(req, res, next) {

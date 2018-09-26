@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+<form action="/api/main" method="POST">
+  <p>Имя Ивента: <input type="text" name="name" placeholder="name" value="" required></p>
+  <p>Первый ответ: <input type="text" name="firstAnswer" placeholder="firstAnswer" value="" required></p>
+  <p>Сообщение на ответ:<input type="text" name="firstMessage" placeholder="firstMessage" value="" required></p>
+  <p>Имя награды:<input type="text" name="firstRewardName" placeholder="firstRewardName" value="" required></p>
+  <p>Насколько сильна награда?<input type="text" name="firstRewardPower" placeholder="firstRewardPower" value="" required></p>
+  <p>Какой дает эффект?<input type="text" name="firstRewardEffect" placeholder="firstRewardEffect" value="" required></p>
+  <p>Второй ответ: <input type="text" name="secondAnswer" placeholder="secondAnswer" value="" required></p>
+  <p>Сообщение на ответ:<input type="text" name="secondMessage" placeholder="secondMessage" value="" required></p>
+  <p>Имя награды:<input type="text" name="secondRewardName" placeholder="secondRewardName" value="" required></p>
+  <p>Насколько сильна награда?<input type="text" name="secondRewardPower" placeholder="secondRewardPower" value="" required></p>
+  <p>Какой дает эффект?<input type="text" name="secondRewardEffect" placeholder="secondRewardEffect" value="" required></p>
+  <button>Отправить!</button>
+</form>
+<%- include('partials/footer'); -%>

@@ -32,7 +32,7 @@ MainAnswer.Message = MainAnswer.belongsTo(MainMessage);
 MainAnswer.Reward = MainAnswer.belongsTo(MainReward);
 
 
-sequelize.sync({force: true})
+sequelize.sync()
   .then(() => {
     console.log(`Database & tables created!`)
   })

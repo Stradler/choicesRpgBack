@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+<form action="/api/survival" method="POST">
+  <p>Имя Ивента: <input type="text" name="name" placeholder="name" value="" required></p>
+  <p>Эффект<input type="text" name="effect" placeholder="effect" value="" required></p>
+  <p>Возраст<input type="text" name="age" placeholder="age" value="" required></p>
+  <p>Первый ответ: <input type="text" name="firstAnswer" placeholder="firstAnswer" value="" required></p>
+  <p>Сообщение на ответ:<input type="text" name="firstMessage" placeholder="firstMessage" value="" required></p>
+  <p>Насколько сильный эффект?<input type="text" name="firstPower" placeholder="firstPower" value="" required></p>
+  <p>Второй ответ: <input type="text" name="secondAnswer" placeholder="secondAnswer" value="" required></p>
+  <p>Сообщение на ответ:<input type="text" name="secondMessage" placeholder="secondMessage" value="" required></p>
+  <p>Насколько сильный эффект?<input type="text" name="secondPower" placeholder="secondPower" value="" required></p>
+  <button>Отправить!</button>
+</form>
+<%- include('partials/footer'); -%>
