@@ -1,14 +1,14 @@
 module.exports = (sequelize, type) => {
-  return sequelize.define('survival', {
+  return sequelize.define('reward', {
       // id: {
       //   type: type.INTEGER,
       //   primaryKey: true,
       //   autoIncrement: true
       // },
-      name : type.STRING,
+      reward_name: type.STRING,
       effect: type.STRING,
-      age: type.INTEGER
+      power: type.INTEGER
   }, {
-    tableName: "survival"
+    tableName: "reward"
   })
 }

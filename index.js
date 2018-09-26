@@ -1,18 +1,19 @@
-// const bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 const express = require("express");
 const app = express();
 const dotenv = require('dotenv');
 const helmet = require("helmet");
-const eventRoutes = require("./routes/events");
 const cors = require("cors");
-const sequelize = require("./models");
+const eventRoutes = require("./routes/events");
+
 
 dotenv.load();
 app.set("view engine", "ejs");
 app.use(express.static('public'));
 app.use(cors());
 app.use(helmet())
-app.use(express.urlencoded({extended: true}));
+// app.use(express.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
   res.render("index");
 });
